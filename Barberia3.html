@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Reserva - Barberum</title> <!-- Se establece el conjunto de caracteres y se define el título del html reserva -->
+    <link rel="stylesheet" href="globalstyles.css"> <!-- Se vinculan los archivos CSS para aplicar estilos a la página web -->
+    <link rel="stylesheet" href="3.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar"> <!-- Se establece la barra de navegación -->
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Barberia1.html">Nuestro equipo</a></li>
+        <li><a href="Barberia3.html">Reserva</a></li>
+        <li><a href="Barberia4.html">Horarios</a></li>
+      </nav>
+    </header>
+    <main>
+      <section class="reservation"> <!-- Se establece un formulario de reserva de cita con un diseño limpio y claro, que utiliza etiquetas "label" para cada campo del formulario y atributos "id" y "name" para cada entrada de usuario. -->
+        <h2>Reserva una cita</h2>
+        <form>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="phone">Teléfono:</label>
+          <input type="tel" id="phone" name="phone" required> <!-- Incluye campos de entrada obligatorios para el nombre, correo electrónico, teléfono, barbero, servicio, fecha y hora. Las opciones predefinidas para los campos "barbero" y "servicio" se presentan en una lista desplegable utilizando el elemento "select" y la etiqueta "option". -->
+          <label for="barber">Barbero:</label>
+          <select id="barber" name="barber" required>
+            <option value="">Selecciona un barbero</option>
+            <option value="Juan Pérez">Juan Pérez</option>
+            <option value="Pedro Gómez">Pedro Gómez</option>
+            <option value="Carlos Martínez">Carlos Martínez</option>
+          </select>
+          <label for="service">Servicio:</label>
+          <select id="service" name="service" required>
+            <option value="">Selecciona un servicio</option>
+            <option value="Corte de cabello">Corte de cabello</option>
+            <option value="Arreglo de barba">Arreglo de barba</option>
+            <option value="Teñido de cabello">Teñido de cabello</option>
+          </select>
+          <label for="date">Fecha:</label>
+          <input type="date" id="date" name="date" required>
+          <label for="time">Hora:</label>
+          <input type="time" id="time" name="time" required>
+          <input type="submit" value="Reservar">
+        </form>
+      </section>
+    </main>
+    <footer> <!-- Sección footer, muestra el pie de pagina -->
+      <p>Derechos de autor © 2023 Barberum. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
+
+    
+    
+        
+              

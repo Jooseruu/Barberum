@@ -1,0 +1,61 @@
+.team { /*Estilo elemnto team*/
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .team h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .team p {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .team ul { /*Los elementos de team están dentro de una lista desordenada (ul) y se envuelven en elementos li.*/
+    display: flex;
+    flex-wrap: wrap;/*El código utiliza flex  para colocar los elementos del equipo en una fila en pantallas más grandes.*/
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .team li {
+    margin: 20px;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .team li img { /*Los elementos de team tienen una imagen, un título y una descripción.*/
+    width: 100%;
+    height: auto;
+  }
+  
+  .team li h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+  }
+  
+  .team li p {
+    font-size: 18px;
+    margin: 0 20px 20px;
+  }
+  
+  @media screen and (max-width: 768px) { /*Se utiliza media queries para ajustar el diseño en pantallas más pequeñas, cambiando la dirección de flexbox y reduciendo el ancho de los elementos li.*/
+    .team ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .team li {
+      width: 90%;
+    }
+  }
+  

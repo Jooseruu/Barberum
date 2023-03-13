@@ -1,0 +1,171 @@
+.navbar { /*Este es un código CSS para estilizar una barra de navegación (navbar).*/
+  display: flex;/*Se utiliza la propiedad "display: flex" para permitir que los elementos dentro de la navbar se ajusten a un diseño flexible.*/
+  justify-content: space-between;/*Se utiliza para separar los elementos de la barra de navegación.*/
+  align-items: center;  /*alinea los elementos verticalmente en el centro.*/
+  padding: 20px;
+  background-color: #614040;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a { 
+  color: #939191; /*Se utiliza una paleta de colores de tonos rojos y grises oscuros para la navbar.*/
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.navbar a:hover { /*Cuando el usuario se desplaza sobre los enlaces, los elementos se resaltan en un tono rojo más oscuro y los colores de texto y fondo cambian. Además, los enlaces aumentan su tamaño de fuente y se les agrega un borde redondeado.*/
+  background-color: #d55c5a; 
+  color: #ebd4cc;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) { /*Para pantallas con un ancho máximo de 768 píxeles, se aplica un estilo diferente en la barra de navegación para que los elementos se apilen verticalmente en lugar de mostrarse en línea.*/
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar a {
+    margin: 10px 0;
+  }
+}
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+.hero { /*da estilo a sección de héroe*/
+  background-image: url("barberia.jpg"); /*Se establece un fondo de imagen y ajusta el tamaño de la imagen de fondo para cubrir todo el ancho de la sección.*/
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px grey; /*Se establecen sombras en la caja hero*/
+  margin: 25px;
+  padding: 25px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) { /* También tiene media queries que ajustan el diseño y el tamaño del texto dependiendo del tamaño de pantalla del usuario.*/
+  .hero {
+    height: auto;
+    padding: 100px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    grid-row: 1 / 2;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin: 0;
+    grid-row: 2 / 3;
+  }
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+footer { /*estilo para el pie de página*/
+  background-color: #222;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+footer:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer p { /*También se establece que el contenido del pie de página (un párrafo) no tendrá margen.*/
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) { /*Hay una media query que se utiliza para cambiar el tamaño de la fuente del pie de pagina cuando es menor a 768*/
+  footer {
+    font-size: 1rem;
+  }
+}
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+.about { /*se definen estilos para el contenedor about*/
+  background-color: #614040;
+  margin: 50px auto; /*El contenedor tiene un fondo de color #614040 y se ajusta al centro con un margen de 50 píxeles.*/
+  padding: 20px;
+  border: 2px solid #333;
+  box-shadow: 5px 5px 5px #888888;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) { /*Dependiendo del tamaño de la pantalla, los elementos dentro del contenedor se ajustarán y se organizarán de manera diferente.*/
+  .about {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .about p {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    text-align: left;
+  }
+}
+
