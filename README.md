@@ -77,7 +77,7 @@ Podriamos decir que el apartado reseñas es un submenú donde puedes visualizar 
         </section>
 ~~~
 #### Nota
-Es importante que para que todos los elementos funciones esten en la misma carpeta
+Es importante que para que todo funcione correctamente esten todos los archivos en la misma carpeta
 
 
 
