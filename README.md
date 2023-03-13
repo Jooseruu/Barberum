@@ -15,7 +15,9 @@ Durante la fase de maquetación, surgieron varios problemas, especialmente en el
 
 En la fase de perfeccionamiento, se dedicó tiempo a comentar el código y mejorar el aspecto visual de la web. Aunque no se logró una personalización óptima, en cuanto a combinación de colores y otros aspectos.
 
-![HTML-CSS](img\html-css-logo.jpg)
+![HTML-CSS](img\CSS.png)  
+![HTML-CSS](img\html.png) 
+
 
 
 
