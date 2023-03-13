@@ -6,6 +6,7 @@ Elegir la temática para una página web puede ser un proceso complicado, especi
 En primer lugar, una barbería ofrece una amplia variedad de oportunidades para mostrar visualmente los servicios y productos que se ofrecen. Desde los cortes de pelo clásicos hasta los modernos estilos de barba, las barberías son un lugar donde los hombres pueden recibir servicios de alta calidad. Las barberías suelen tener una estética visual muy atractiva y característica, lo que permite la creación de una galería de fotos llamativa y atractiva.
 
 Además, una barbería también puede ser una excelente opción para la implementación de otros requisitos, como un menú desplegable que permita a los visitantes ver las reseñas y comentarios de otros clientes. Las opiniones y valoraciones de los clientes pueden ser una herramienta muy útil para ayudar a los visitantes a decidir si una barbería es la elección adecuada para ellos.
+![Rotulo Barber](https://github.com/Jooseruu/Barberum/blob/main/img/rotulo.png)  
 
 
 ## Estructura del proyecto
